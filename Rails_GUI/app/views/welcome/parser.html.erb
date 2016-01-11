@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag "style.css" %>
+
+<div class="login-block">
+	<h1>Login Successful!</h1>
+	<p>Please choose a language to parse and an amount of lines!</p>
+	<div class="parser-menu">
+		<select id="lang">
+			<option value="ruby">Ruby</option>
+			<option value="cpp">C++</option>
+			<option value="java">Java</option>
+		</select> 
+		<input type="number" placeholder="# of lines" id="lines"/>
+	</div>
+	<input type="button" onclick="location.href='../welcome/result';" value="Parse" id="opt">
+</div>
